@@ -1,5 +1,9 @@
 module ColorPrinting
 
-# Write your package code here.
+include("interpolation.jl")
+include("parser.jl")
+include("colorscheme.jl")
 
-end
+export @c_str, ColorScheme
+
+end # module
